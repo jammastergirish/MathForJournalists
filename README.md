@@ -1,4 +1,4 @@
-# MathForJournalists
+# Math for Journalists
 
 This app is an idea that's been simmering for a few years but I've never bothered to actually code it. I'm finally putting it together as the final project in Harvard's superb CS50 course.
 
