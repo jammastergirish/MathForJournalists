@@ -23,14 +23,14 @@ struct ContentView: View
                 Inflation().tabItem {
                     Image(systemName: "cart");
                     Text("Inflation").tag(2) }
-//                Text("Tab Content 4").tabItem {
-//                    Image(systemName: "square.and.pencil");
-//                    Text("Surveys/Polls").tag(3) }
+                //                Text("Tab Content 4").tabItem {
+                //                    Image(systemName: "square.and.pencil");
+                //                    Text("Surveys/Polls").tag(3) }
                 About().tabItem {
                     Image(systemName: "info");
                     Text("About").tag(3) }
             }
-//            .foregroundColor(.black)
+            //            .foregroundColor(.black)
             .accentColor(.orange)
         }
     }
@@ -44,15 +44,15 @@ struct About: View
         {
             VStack
             {
-                Text("Math for Journalists was created by Girish Gupta, a former investigative and multimedia journalist working in Venezuela, the Americas and Middle East with everyone from Reuters to the New Yorker.\n\nGirish has a Master's in physics and two decades of full-stack programming experience.\n\nThis iOS app was created as a quick final project for Harvard's excellent CS50 computer science course.\n\nPlease get in touch if you have any ideas for the app or would like to make improvements yourself.").padding()
+                Text("Math for Journalists was created by Girish Gupta, a former investigative and multimedia journalist working in Venezuela, the Americas and Middle East with everyone from Reuters to the New Yorker.\n\nGirish has a Master's in physics and two decades of full-stack programming experience.\n\nThis iOS app was created as a quick final project for Harvard's excellent CS50 computer science course.\n\nPlease get in touch if you have any ideas or would like to make improvements yourself.").padding()
                 Link(destination: URL(string: "https://www.girishgupta.com/")!) {
                     Image(systemName: "link")
-    //                    .font(.largeTitle)
+                    //                    .font(.largeTitle)
                     Text("Girish Gupta")
                 }.padding() // https://www.hackingwithswift.com/quick-start/swiftui/how-to-open-web-links-in-safari
                 Link(destination: URL(string: "https://www.github.com/jammastergirish/MathForJournalists")!) {
                     Image(systemName: "link")
-    //                    .font(.largeTitle)
+                    //                    .font(.largeTitle)
                     Text("GitHub")
                 }.padding() // https://www.hackingwithswift.com/quick-start/swiftui/how-to-open-web-links-in-safari
             }.navigationBarTitle(Text("About"))
@@ -89,23 +89,23 @@ struct Percentages: View
                         
                         VStack
                         {
-//                            TextField("", value: $old, formatter: NumberFormatter()) // https://www.simpleswiftguide.com/swiftui-textfield-complete-tutorial/ https://stackoverflow.com/a/59509242
+                            //                            TextField("", value: $old, formatter: NumberFormatter()) // https://www.simpleswiftguide.com/swiftui-textfield-complete-tutorial/ https://stackoverflow.com/a/59509242
                             TextField("", text: Binding<String>(
-                                get: { String(format: "%.1f", self.old) },
-                                set: {
-                                    if let value = NumberFormatter().number(from: $0) {
-                                        self.old = value.doubleValue
-                                    }})) // https://stackoverflow.com/a/61270145
+                                        get: { String(format: "%.1f", self.old) },
+                                        set: {
+                                            if let value = NumberFormatter().number(from: $0) {
+                                                self.old = value.doubleValue
+                                            }})) // https://stackoverflow.com/a/61270145
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .keyboardType(.decimalPad) // https://programmingwithswift.com/numbers-only-textfield-with-swiftui/
                                 .padding()
                             
                             TextField("", text: Binding<String>(
-                                get: { String(format: "%.1f", self.new) },
-                                set: {
-                                    if let value = NumberFormatter().number(from: $0) {
-                                        self.new = value.doubleValue
-                                    }})) // https://stackoverflow.com/a/61270145
+                                        get: { String(format: "%.1f", self.new) },
+                                        set: {
+                                            if let value = NumberFormatter().number(from: $0) {
+                                                self.new = value.doubleValue
+                                            }})) // https://stackoverflow.com/a/61270145
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .keyboardType(.decimalPad) // https://programmingwithswift.com/numbers-only-textfield-with-swiftui/
                                 .padding()
@@ -166,23 +166,23 @@ struct Currency: View
                         
                         VStack
                         {
-//                            TextField("", value: $old, formatter: NumberFormatter()) // https://www.simpleswiftguide.com/swiftui-textfield-complete-tutorial/ https://stackoverflow.com/a/59509242
+                            //                            TextField("", value: $old, formatter: NumberFormatter()) // https://www.simpleswiftguide.com/swiftui-textfield-complete-tutorial/ https://stackoverflow.com/a/59509242
                             TextField("", text: Binding<String>(
-                                get: { String(format: "%.1f", self.old) },
-                                set: {
-                                    if let value = NumberFormatter().number(from: $0) {
-                                        self.old = value.doubleValue
-                                    }})) // https://stackoverflow.com/a/61270145
+                                        get: { String(format: "%.1f", self.old) },
+                                        set: {
+                                            if let value = NumberFormatter().number(from: $0) {
+                                                self.old = value.doubleValue
+                                            }})) // https://stackoverflow.com/a/61270145
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .keyboardType(.decimalPad) // https://programmingwithswift.com/numbers-only-textfield-with-swiftui/
                                 .padding()
                             
                             TextField("", text: Binding<String>(
-                                get: { String(format: "%.1f", self.new) },
-                                set: {
-                                    if let value = NumberFormatter().number(from: $0) {
-                                        self.new = value.doubleValue
-                                    }})) // https://stackoverflow.com/a/61270145
+                                        get: { String(format: "%.1f", self.new) },
+                                        set: {
+                                            if let value = NumberFormatter().number(from: $0) {
+                                                self.new = value.doubleValue
+                                            }})) // https://stackoverflow.com/a/61270145
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .keyboardType(.decimalPad) // https://programmingwithswift.com/numbers-only-textfield-with-swiftui/
                                 .padding()
@@ -211,7 +211,7 @@ struct Currency: View
                 
                 Link(destination: URL(string: "https://www.reuters.com/article/us-venezuela-economy-idUSKBN1FP2WK")!) {
                     Image(systemName: "link")
-    //                    .font(.largeTitle)
+                    //                    .font(.largeTitle)
                     Text("Example")}.padding()
             }.navigationBarTitle(Text("Currency Change"))
             .gesture(TapGesture().onEnded{_ in UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)}) // https://stackoverflow.com/a/59704606 https://developer.apple.com/documentation/swiftui/tapgesture (https://www.hackingwithswift.com/quick-start/swiftui/how-to-dismiss-the-keyboard-for-a-textfield)
@@ -232,7 +232,7 @@ struct Inflation: View
     var calc_factor_given_annual: Double { 12 * log(factor) / log((inflation / 100) + 1) }
     
     var calc_factor_given_monthly: Double { 12 * log(factor) / log((annual_given_monthly / 100) + 1) }
-        
+    
     var body: some View
     {
         NavigationView
@@ -241,11 +241,11 @@ struct Inflation: View
             {
                 VStack
                 {
-                    Text("Inflation is just the percentage change between a price index at two points in time. That's covered by the first tab.\n\nBut, given an inflation rate, you may want to know more about what that implies for prices.").padding()
+                    Text("Inflation is just the percentage change between a price index at two points in time. That's covered by the first tab.\n\nBut, given an inflation rate (either annual or monthly), you may want to know more about what that implies for prices.").padding()
                     
                     Toggle(isOn: $monthly)
                     {
-                        Text("I'm dealing with monthly inflation")
+                        Text("I've got monthly inflation data.")
                     }.padding() // https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-toggle-switch
                     
                     HStack(alignment: .center)
@@ -258,11 +258,11 @@ struct Inflation: View
                         VStack
                         {
                             TextField("", text: Binding<String>(
-                                get: { String(format: "%.1f", self.inflation) },
-                                set: {
-                                    if let value = NumberFormatter().number(from: $0) {
-                                        self.inflation = value.doubleValue
-                                    }})) // https://stackoverflow.com/a/61270145
+                                        get: { String(format: "%.1f", self.inflation) },
+                                        set: {
+                                            if let value = NumberFormatter().number(from: $0) {
+                                                self.inflation = value.doubleValue
+                                            }})) // https://stackoverflow.com/a/61270145
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .keyboardType(.decimalPad) // https://programmingwithswift.com/numbers-only-textfield-with-swiftui/
                                 .padding()
@@ -289,7 +289,7 @@ struct Inflation: View
                     
                     HStack
                     {
-                        Text("Factor: ").padding(.trailing)
+                        Text("Time for prices to multiply by...: ").padding(.trailing)
                         Text("2")
                         Slider(value: $factor, in: 2...10, step: 1) //https://www.simpleswiftguide.com/swiftui-slider-tutorial-how-to-create-and-use-slider-in-swiftui/
                         Text("10")
@@ -306,15 +306,15 @@ struct Inflation: View
                     }
                     Link(destination: URL(string: "https://journalism.girishgupta.com/sp.php?id=2013")!) {
                         Image(systemName: "link")
-        //                    .font(.largeTitle)
+                        //                    .font(.largeTitle)
                         Text("More...")}.padding()
                 }
-            }.navigationBarTitle(Text("Percentage Change"))
+            }.navigationBarTitle(Text("Inflation Rates"))
             .gesture(TapGesture().onEnded{_ in UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)}) // https://stackoverflow.com/a/59704606 https://developer.apple.com/documentation/swiftui/tapgesture (https://www.hackingwithswift.com/quick-start/swiftui/how-to-dismiss-the-keyboard-for-a-textfield)
         }
     }
 }
-    
+
 struct ContentView_Previews: PreviewProvider
 {
     static var previews: some View
