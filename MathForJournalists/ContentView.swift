@@ -44,12 +44,13 @@ struct About: View
         {
             VStack
             {
-                Text("Math for Journalists was created by Girish Gupta, a former investigative and multimedia journalist working in Venezuela, the Americas and Middle East with everyone from Reuters to the New Yorker.\n\nGirish has a Master's in physics and two decades of full-stack programming experience.\n\nThis iOS app was created as a quick final project for Harvard's excellent CS50 computer science course.\n\nPlease get in touch if you have any ideas or would like to make improvements yourself.").padding()
+                Text("This iOS app was created by Girish Gupta as a quick final project for Harvard's excellent CS50 computer science course.\n\nPlease get in touch if you have any ideas.").padding()
                 Link(destination: URL(string: "https://www.girishgupta.com/")!) {
                     Image(systemName: "link")
                     //                    .font(.largeTitle)
                     Text("Girish Gupta")
                 }.padding() // https://www.hackingwithswift.com/quick-start/swiftui/how-to-open-web-links-in-safari
+                Text("Feel free to browse the code or commit to it yourself!").padding()
                 Link(destination: URL(string: "https://www.github.com/jammastergirish/MathForJournalists")!) {
                     Image(systemName: "link")
                     //                    .font(.largeTitle)
@@ -128,7 +129,7 @@ struct Percentages: View
                     }
                     else
                     {
-                        Text("[Subject] is up \(abs(self.calc), specifier: "%.0f") per cent in [time period].").padding()
+                        Text("[Subject] is up \(abs(self.calc), specifier: "%.0f") per cent in [time period].").italic().padding()
                     }
                 }
             }.navigationBarTitle(Text("Percentage Change"))
@@ -201,11 +202,11 @@ struct Currency: View
                     
                     if (self.calc<0)
                     {
-                        Text("[Foreign currency] has weakened \(abs(self.calc), specifier: "%.0f") per cent against the [reference currency] in [time period].").padding()
+                        Text("[Foreign currency] has weakened \(abs(self.calc), specifier: "%.0f") per cent against the [reference currency] in [time period].").italic().padding()
                     }
                     else
                     {
-                        Text("[Foreign currency] has strengthened \(abs(self.calc), specifier: "%.0f") per cent against the [reference currency] in [time period].").padding()
+                        Text("[Foreign currency] has strengthened \(abs(self.calc), specifier: "%.0f") per cent against the [reference currency] in [time period].").italic().padding()
                     }
                 }
                 
@@ -289,7 +290,7 @@ struct Inflation: View
                     
                     HStack
                     {
-                        Text("Time for prices to multiply by...: ").padding(.trailing)
+                        Text("Time for prices to multiply by a factor of... ").padding(.trailing)
                         Text("2")
                         Slider(value: $factor, in: 2...10, step: 1) //https://www.simpleswiftguide.com/swiftui-slider-tutorial-how-to-create-and-use-slider-in-swiftui/
                         Text("10")
@@ -297,11 +298,11 @@ struct Inflation: View
                     
                     if monthly
                     {
-                        Text("It would take \(self.calc_factor_given_monthly, specifier: "%.0f") months for prices to increase \(self.factor, specifier: "%.0f")-fold.").padding()
+                        Text("It would take \(self.calc_factor_given_monthly, specifier: "%.0f") months for prices to increase \(self.factor, specifier: "%.0f")-fold.").italic().padding()
                     }
                     else
                     {
-                        Text("It would take \(self.calc_factor_given_annual, specifier: "%.0f") months for prices to increase \(self.factor, specifier: "%.0f")-fold.").padding()
+                        Text("It would take \(self.calc_factor_given_annual, specifier: "%.0f") months for prices to increase \(self.factor, specifier: "%.0f")-fold.").italic().padding()
                         //Let's copy this text to the clipboard using https://stackoverflow.com/a/63998380/7207315
                     }
                     Link(destination: URL(string: "https://journalism.girishgupta.com/sp.php?id=2013")!) {
