@@ -44,7 +44,7 @@ struct About: View
         {
             VStack
             {
-                Text("This iOS app was created by investigative/multimedia reporter, programmer and physics graduate Girish Gupta as a quick final project for Harvard's excellent CS50 computer science course.\n\nIt's by no means perfect and needs some cleaning up and styling. Please get in touch if you have any ideas.").padding()
+                Text("This iOS app was created by investigative/multimedia reporter, programmer and physics graduate Girish Gupta.").padding()
                 Link(destination: URL(string: "https://www.girishgupta.com/")!) {
                     Image(systemName: "link")
                     //                    .font(.largeTitle)
@@ -78,7 +78,7 @@ struct Percentages: View
             {
                 VStack
                 {
-                    Text("Calculating percentage changes between two values is a fundamental means of explaining changes in time.\n\nThis could apply to anything from budgets to prices.\n\nDon't forget to check the sign!").padding()
+                    Text("Calculating percentage changes between two values is a fundamental means of explaining changes over time.\n\nThis could apply to anything from budgets to prices.\n\nDon't forget to check the sign!").padding()
                     
                     HStack(alignment: .center)
                     {
@@ -155,7 +155,7 @@ struct Currency: View
             {
                 VStack
                 {
-                    Text("Journalists from the New York Times to Associated Press have made the mistake of using standard percentage changes when looking at exchange rate changes over time.\n\nYou want the percentage change in value with respect to another currency (likely the U.S. dollar) so need to take the reciprocal of the exchange rates.").padding()
+                    Text("Journalists from the New York Times to Associated Press have made the mistake of using standard percentage changes when looking at exchange rate changes over time.\n\nYou want the percentage change in value with respect to another currency (likely the U.S. dollar).").padding()
                     
                     HStack(alignment: .center)
                     {
