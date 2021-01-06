@@ -8,6 +8,8 @@ I chose an iOS app as a final project in order to get a handle on SwiftUI, Apple
 
 It's nothing complicated—essentially a basic calculator with a few different equations that I saw journalists struggle with over the years.
 
-Going forward, I'd want to style it better, add some more nifty experiences such as the slider, add more text examples. I'll also get it onto the App Store.
+Going forward, I'd want to style it better, add some more nifty experiences such as the slider, add more text examples.
 
-https://www.youtube.com/watch?v=YOw0EfTrPVA&feature=youtu.be
+Video for CS50: https://www.youtube.com/watch?v=YOw0EfTrPVA&feature=youtu.be
+
+App Store: https://apps.apple.com/us/app/math-for-journalists/id1547221444
